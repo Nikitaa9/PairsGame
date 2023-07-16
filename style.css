@@ -1,0 +1,98 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 60px;
+  color: rgb(8, 8, 8);
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 45px;
+}
+
+.gameField {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 180px;
+  border-radius: 10px;
+  background-color: rgb(75, 75, 90);
+  font-size: 60px;
+  font-weight: bold;
+  color: transparent;
+  cursor: pointer;
+  transition: .2s all;
+}
+
+.card.open {
+  background-color: rgb(199, 153, 205);
+  color: rgb(37, 37, 41);
+}
+
+.card.success {
+  background-color: rgb(101, 161, 81);
+  color: rgb(20, 21, 20);
+  transform: scale(0.9);
+}
+
+.button {
+  width: 15%;
+  height: 50px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: .3s all;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.input {
+  width: 23%;
+  height: 50px;
+  border-color: black;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+.input:hover {
+  border-color: gray;
+}
+
+.input::placeholder {
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+.timer {
+  margin-bottom: 20px;
+  padding-left: 60px;
+  font-size: 35px;
+  color: rgb(10, 9, 9)
+}
